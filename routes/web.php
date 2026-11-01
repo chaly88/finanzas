@@ -10,6 +10,8 @@ use App\Livewire\Deudas\DeudaIndex;
 use App\Livewire\Categorias\CategoriaIndex;
 use App\Livewire\Ahorros\MetaIndex;
 use App\Livewire\MovimientosRecurrentes\MovimientoRecurrenteIndex;
+use App\Livewire\Archivos\ArchivoIndex;
+use App\Http\Controllers\ArchivoController;
 use App\Http\Controllers\Auth\LoginController;
 
 Route::view('/login', 'adminlte::auth.login')
@@ -55,4 +57,8 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/movimientos-recurrentes', MovimientoRecurrenteIndex::class)
         ->name('movimientos-recurrentes.index');
+
+    Route::get('/archivos', ArchivoIndex::class)->name('archivos.index');
+    Route::get('/archivos/{archivo}/vista-previa', [ArchivoController::class, 'preview'])
+        ->name('archivos.preview');
 });

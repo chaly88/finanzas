@@ -460,6 +460,14 @@ return [
             'url' => '/informes',
             'icon' => 'bi bi-bar-chart-line',
         ],
+        [
+            'header' => 'ARCHIVOS',
+        ],
+        [
+            'text' => 'Archivos',
+            'url' => '/archivos',
+            'icon' => 'bi bi-folder2-open',
+        ],
     ],
 
 
