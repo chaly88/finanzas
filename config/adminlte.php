@@ -468,6 +468,14 @@ return [
             'url' => '/archivos',
             'icon' => 'bi bi-folder2-open',
         ],
+        [
+            'header' => 'ENLACES',
+        ],
+        [
+            'text' => 'Enlaces',
+            'url' => '/enlaces',
+            'icon' => 'bi bi-bookmarks',
+        ],
     ],
 
 
