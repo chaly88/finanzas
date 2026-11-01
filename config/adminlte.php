@@ -56,7 +56,7 @@ return [
 
     'logo' => '<b>Mis</b> Finanzas',
     // 'logo_img' => 'vendor/adminlte/img/AdminLTELogo.png',
-    'logo_img' => null,
+    'logo_img' => 'images/logo.png',
     // 'logo_img_class' => 'brand-image opacity-75 shadow',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_alt' => 'Finanzas Personales',
